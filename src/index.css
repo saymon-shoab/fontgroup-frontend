@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -64,5 +64,47 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+} */
+
+
+/* Custom styles for Font Group System */
+.font-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.border-dashed {
+  border-style: dashed !important;
+}
+
+.border-2 {
+  border-width: 2px !important;
+}
+
+/* Drag and drop hover effects */
+.drag-over {
+  background-color: rgba(13, 110, 253, 0.1);
+  border-color: #0d6efd !important;
+}
+
+/* Font preview styling */
+.font-preview {
+  transition: all 0.2s ease;
+}
+
+.font-preview:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive table improvements */
+@media (max-width: 768px) {
+  .table-responsive {
+    font-size: 0.875rem;
+  }
+  
+  .font-badge {
+    font-size: 0.7rem;
+    margin: 0.1rem;
   }
 }
