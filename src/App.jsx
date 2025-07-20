@@ -30,7 +30,7 @@ function App() {
 
           <FontUploader onFontUploaded={handleFontUploaded} />
           <FontList refreshTrigger={fontRefreshTrigger} />
-          <CreateFontGroup onGroupCreated={handleGroupCreated}/>
+          <CreateFontGroup onGroupCreated={handleGroupCreated} refreshTrigger={fontRefreshTrigger}/>
           <FontGroupList refreshTrigger={groupRefreshTrigger} />
         </Container>
       </div>

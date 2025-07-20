@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Alert, Button, Card, Col, Form, Row } from "react-bootstrap";
 import { createFontGroup, getFonts } from "../services/api";
 
-const CreateFontGroup = ({onGroupCreated}) => {
+const CreateFontGroup = ({onGroupCreated, refreshTrigger}) => {
   const [fonts, setFonts] = useState([]);
   const [selectedFonts, setSelectedFonts] = useState([""]);
   const [error, setError] = useState("");
@@ -11,7 +11,7 @@ const CreateFontGroup = ({onGroupCreated}) => {
 
   useEffect(() => {
     loadFonts();
-  }, []);
+  }, [refreshTrigger]);
 
   const loadFonts = async () => {
     try {
